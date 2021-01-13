@@ -9,7 +9,7 @@
 
             <h2>General Info</h2>
             <p>My name is Max Cohen and I am an aspiring Sofware Engineer/Developer. I dabbled a bit with coding starting from middle school, but I really started to 
-                learn get into good Computer Science practices during senior year of high school. 
+                learn get into good Computer Science practices during senior year of high school. <br>
                 I have worked as the <strong>Database and Internal Website Manager</strong> of Fass Selections for the past 6 years, and I also was a <strong>Software Development Intern</strong> this past summer. 
             </p>
 
@@ -51,9 +51,43 @@
                 <li>Dim Sum</li>
             </ol>
 
+            <h3> Friend Application</h3>
+
+            If you're <em>still</em> here, then you must <em>really</em> be interested in me, so here is an application to become my friend.
+
+            <form>
+                <h4> Basic Info</h4>
+                <label for = "firstname">First Name: </label> <input type = "text" placeholder  ="First Name" id="firstname"> <br>
+                <label for = "lastname" >Last Name:</label> <input type = "text" placeholder  ="Last Name" id="lastname"> <br> 
+                <label for = "tel" > Telephone Number:</label><input type = "tel" id="tel"> <br>
+                <label for = "email" >email: </label>  <input type = "email" id="email"> <br>
+                <label for = "dob" >Date of Birth: </label>  <input type = "date" id="dob"> <br>
+
+
+                <h4>Friend Compatibility</h4>
+
+                <label for = "friends" >How many other friends do you have?: </label>  <input type = "number" accept = ".doc,.docx,.pdf" id="friends"> <br>
+                
+                <label for = "grad" >Graduation Month: </label>  <input type = "month" id="grad"> <br>
+                <label for = "anime" >How much do you like anime?: </label>  <input type = "range" id="anime" min="0" maxc="10" step="1"> <br>
+                <label for = "color" >What is your favorite color: </label>  <input type = "color" id="color" > <br>
+
+
+                <h4>Requirements</h4>
+
+                <label for = "essay">In 1000 words or fewer, why do you want to be my friend?</label><br> <textarea id="essay" rows = "50" cols="40"></textarea> <br>
+                <label for = "resume" >Resume: </label>  <input type = "file" accept = ".doc,.docx,.pdf" id="resume"> <br>
+                <label for = "check" >I hereby certify, that I am a totally cool person worthy of Max's friendship: </label>  <input type = "checkbox" accept = ".doc,.docx,.pdf" id="check"> <br>
+
+                <input type = "submit" > <br>
+
+            </form>
+            
+             
+                
         </main>
         <footer>
 
         </footer>
     </body>
-</html>
+</html> 

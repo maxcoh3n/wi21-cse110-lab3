@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About Me 2</title>
     </head>
-
+    <link rel="icon" href="favicon.ico">
     <body>
         <header>
             <h1>Max's About Me Page</h1>
@@ -15,7 +15,7 @@
                 <img src="treeMe.jpg" width="214" height="280">
             </template>
 
-            <link rel="icon" href="favicon.ico">
+           
 
             
             <h2>General Info</h2>
@@ -210,7 +210,7 @@
                     &emsp; &nbsp; A <br>
                     &nbsp; &nbsp; &nbsp; A <br>
                     &nbsp; &nbsp;  A <br>
-                    :O>--< &emsp; 
+                    :O>--&lt &emsp; 
                 </marquee>
             </details>
 
@@ -252,14 +252,21 @@
                 </datalist>
 
 
-                <label for="show">Choose your favorite show among these:</label>
+                <label for="show">Choose your favorite comedy among these:</label>
 
                 <select name="show" id="show">
-                    <option value="">--Please choose an option--</option>
-                    <option value="office">The Office</option>
-                    <option value="friends">Friends</option>
-                    <option value="bang">The Big Bang Theory</option>
-                    <option value="sunny">It's Always Sunny in Philadelphia</option>
+                    <optgroup label = "Live Action">
+                        <option value="office">The Office</option>
+                        <option value="friends">Friends</option>
+                        <option value="bang">The Big Bang Theory</option>
+                        <option value="sunny">It's Always Sunny in Philadelphia</option>
+                    </optgroup>
+                    <optgroup label ="Animated" >
+                        <option value="bojack">Bojack Horseman</option>
+                        <option value="southPark">South Park</option>
+                        <option value="familyGuy">Family Guy</option>
+                        <option value="simpsons">The Simpsons</option>
+                    </optgroup>
                     <option value="parrot">I have not seen any of these</option>
                 </select>
 

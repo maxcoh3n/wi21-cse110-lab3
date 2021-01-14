@@ -10,7 +10,14 @@
         <header>
             <h1>Max's About Me Page</h1>
 
+            <template>
+                <h3> A picture of Me</h3>
+                <img src="treeMe.jpg" width="214" height="280">
+            </template>
 
+            <link rel="icon" href="favicon.ico">
+
+            
             <h2>General Info</h2>
             <p>My name is Max Cohen and I am an aspiring Sofware Engineer/Developer. I dabbled a bit with coding starting from middle school, but I really started to 
                 learn get into good Computer Science practices during senior year of high school. <br>
@@ -30,17 +37,19 @@
             <span><a href="https://github.com/maxcoh3n/gimme-a-break" target="_blank">Gimme A Break</a>, a browser extension to increase productivity.</span> <br>
             <span><a href="https://github.com/maxcoh3n/ucsd-smart-dining" target="_blank">UCSD Smart Dining</a>, a health-concious web-app for UCSD Dining Halls. </span> <br>
             
-
-            <h2>Programming Languages I know</h2>
-            <img src="./java.png" alt = "java" width = 100 height = 100 >
-            <img src="./C.png" alt = "C" width = 100 height = 100 >
-            <img src="./C++.png" alt = "C++" width = 100 height = 100 >
-            <img src="./JS.png" alt = "JavaScript" width = 100 height = 100 >
-            <img src="./Python.png" alt = "Python" width = 100 height = 100 >
-            <img src="./PHP.svg" alt = "PHP" width = 100 height = 100 >
+            <section>
+                <h2>Programming Languages I know</h2>
+                <img src="./java.png" alt = "java" width = 100 height = 100 >
+                <img src="./C.png" alt = "C" width = 100 height = 100 >
+                <img src="./C++.png" alt = "C++" width = 100 height = 100 >
+                <img src="./JS.png" alt = "JavaScript" width = 100 height = 100 >
+                <img src="./Python.png" alt = "Python" width = 100 height = 100 >
+                <img src="./PHP.svg" alt = "PHP" width = 100 height = 100 >
+            </section>
 
             <h2>Classes I've taken so far</h2>
             <table >
+                <caption>All classes up to present</caption>
                 <colgroup>
                     <col  class="quarter">
                     <col  class="courseID">
@@ -187,6 +196,10 @@
                 <li>Dim Sum</li>
             </ol>
 
+            <h3>Comedy</h3>
+
+            <button>I HAVE FREE WILL</button>
+
             <details>
                 <summary>Funny animation</summary>
                 <marquee direction="down" height = "200">
@@ -220,18 +233,53 @@
                 <label for = "anime" >How much do you like anime?: </label>  <input type = "range" id="anime" min="0" max="10" step="1"> <br>
                 <label for = "color" >What is your favorite color: </label>  <input type = "color" id="color" > <br>
 
-                <p> Ya like jazz?</p>
-                <input type="radio" id="yes" name="jazz" value="Yes"><label for="yes">Yes</label><br>
-                <input type="radio" id="meh" name="jazz" value="Meh"><label for="meh">It's okay</label><br>
-                <input type="radio" id="no" name="jazz" value="No"><label for="no">No</label><br>
-                <input type="radio" id="NONO" name="jazz" value="NONO"><label for="NONO">Absolutely Not</label><br>
-                <input type="radio" id="oof" name="jazz" value="oof"><label for="oof">This is a dead meme</label><br>
+                <label for="month">Favorite Month of the Year:</label>
+                <input list="months" id="month" name="month" /> <br>
+                
+                <datalist id="months">
+                    <option value="January">
+                    <option value="February">
+                    <option value="March">
+                    <option value="April">
+                    <option value="May">
+                    <option value="June">
+                    <option value="July">
+                    <option value="August">
+                    <option value="September">
+                    <option value="October">
+                    <option value="November">
+                    <option value="December">
+                </datalist>
+
+
+                <label for="show">Choose your favorite show among these:</label>
+
+                <select name="show" id="show">
+                    <option value="">--Please choose an option--</option>
+                    <option value="office">The Office</option>
+                    <option value="friends">Friends</option>
+                    <option value="bang">The Big Bang Theory</option>
+                    <option value="sunny">It's Always Sunny in Philadelphia</option>
+                    <option value="parrot">I have not seen any of these</option>
+                </select>
+
+                <fieldset><legend>Ya like jazz?</legend>
+                    <input type="radio" id="yes" name="jazz" value="Yes"><label for="yes">Yes</label><br>
+                    <input type="radio" id="meh" name="jazz" value="Meh"><label for="meh">It's okay</label><br>
+                    <input type="radio" id="no" name="jazz" value="No"><label for="no">No</label><br>
+                    <input type="radio" id="NONO" name="jazz" value="NONO"><label for="NONO">Absolutely Not</label><br>
+                    <input type="radio" id="oof" name="jazz" value="oof"><label for="oof">This is a dead meme</label><br>
+                </fieldset>
+                
+
+                
 
 
                 <h4>Requirements</h4>
 
                 <label for = "essay">In a 1000 word essay, why do you want to be my friend?</label><br> <textarea id="essay" rows = "50" cols="40"></textarea> <br>
                 <label for = "resume" >Resume: </label>  <input type = "file" accept = ".doc,.docx,.pdf" id="resume"> <br>
+                <hr>
                 <label for = "check" >I hereby certify that I am a totally cool person worthy of Max's friendship: </label>  <input type = "checkbox" id="check" required> <br>
 
                 <input type = "submit" > <br> <br> <br> 

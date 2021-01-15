@@ -72,126 +72,13 @@
             </section>
 
             <h2>Classes I've taken so far</h2>
-            <table >
-                <caption>All classes up to present</caption>
-                <colgroup>
-                    <col  class="quarter">
-                    <col  class="courseID">
-                    <col  class="courseTitle">
-                </colgroup>
-                <tr >
-                    <th >Quarter</th>
-                    <th >Course ID</th>
-                    <th >Course Title</th>
-                </tr>
-
-                <tr>
-                    <td rowspan="4" >Fall 2019</td>
-                    <td >CSE 11</td>
-                    <td >Introduction to Computer Science and Object-Oriented Programming: Java</td>
-                </tr>
-
-                <tr>
-                    <td >MATH 20C</td>
-                    <td > Calculus and Analytic Geometry for Science and Engineering</td>
-                </tr>
-                
-                <tr>
-                    <td >CAT 1</td>
-                    <td > Culture, Art, Technology</td>
-                </tr>
-
-                <tr>
-                    <td > TDAC 1</td>
-                    <td > Introduction to Acting</td>
-                </tr>
-
-                <tr>
-                    <td rowspan="4" >Winter 2020</td>
-                    <td >CSE 12</td>
-                    <td >Basic Data Structures and Object-Oriented Design</td>
-                </tr>
-
-                <tr>
-                    <td >CSE 20</td>
-                    <td > Discrete Mathematics</td>
-                </tr>
-                
-                <tr>
-                    <td >CAT 2</td>
-                    <td > Culture, Art, Technology</td>
-                </tr>
-
-                <tr>
-                    <td > CE 15L</td>
-                    <td >  Software Tools and Techniques Laboratory</td>
-                </tr>
-
-                <tr>
-                    <td rowspan="4" >Spring 2020</td>
-                    <td >CSE 30</td>
-                    <td >Computer Organization and Systems Programming </td>
-                </tr>
-
-                <tr>
-                    <td >CSE 21</td>
-                    <td > Mathematics for Algorithms and Systems</td>
-                </tr>
-                
-                <tr>
-                    <td >CAT 3</td>
-                    <td > Culture, Art, Technology</td>
-                </tr>
-
-                <tr>
-                    <td > MATH 18</td>
-                    <td > Linear Algebra</td>
-                </tr>
-
-                <tr>
-                    <td rowspan="4" >Fall 2020</td>
-                    <td >CSE 100</td>
-                    <td > Advanced Data Structures</td>
-                </tr>
-
-                <tr>
-                    <td >CSE 103</td>
-                    <td >  A Practical Introduction to Probability and Statistics</td>
-                </tr>
-                
-                <tr>
-                    <td >SOCI 138</td>
-                    <td > Genetics and Society</td>
-                </tr>
-
-                <tr>
-                    <td > MGT 45</td>
-                    <td > Principles of Accounting</td>
-                </tr>
-
-                <tr>
-                    <td rowspan="4" >Winter 2021</td>
-                    <td >CSE 110</td>
-                    <td > Software Engineering</td>
-                </tr>
-
-                <tr>
-                    <td >CSE 101</td>
-                    <td > Design and Analysis of Algorithms</td>
-                </tr>
-                
-                <tr>
-                    <td >MGT 103</td>
-                    <td > Product Marketing and Management</td>
-                </tr>
-
-                <tr>
-                    <td > ECON 1</td>
-                    <td > Principles of Microeconomics </td>
-                </tr>
-                
-            </table>
-
+            
+            <iframe id="inlineFrameExample"
+                title="Inline Frame Example"
+                width="600"
+                height="200"
+                src="coursesTable.html">
+            </iframe>
 
             <h2>Other Links</h2>
             Here is my LinkedIn <a href = "https://www.linkedin.com/in/maxcoh3n/" target ="_blank">Page</a>
@@ -262,6 +149,29 @@
                 print("Hello World"[1:])
             </code><br><br>
 
+
+            <h3>Miscellaneous</h3>
+
+            
+
+
+            <svg viewBox="0 0 12 10" x="200" width="100">
+                <circle stroke = "green" fill="black" cx="3" cy="5" r="2" />
+                <circle stroke = "green" fill="black" cx="9" cy="5" r="2" />
+                <circle stroke = "red" fill="black" cx="6" cy="8" r="1" />
+            </svg><br>
+
+            <video width="250" autoplay controls loop>
+
+                <source src="space.mp4"
+                        type="video/mp4">
+            
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+
+            <canvas width="300" height="300">
+                This canvas is useless without JS
+              </canvas>
 
             <h2> Friend Application</h2>
 
@@ -335,7 +245,6 @@
 
                 <label for = "essay">In a 1000 word essay, why do you want to be my friend?</label><br> <textarea id="essay" rows = "50" cols="40"></textarea> <br>
                 <label for = "resume" >Resume: </label>  <input type = "file" accept = ".doc,.docx,.pdf" id="resume"> <br>
-                <hr>
                 <label for = "check" >I hereby certify that I am a totally cool person worthy of Max's friendship: </label>  <input type = "checkbox" id="check" required> <br>
 
                 <input type = "submit" > <br> <br> <br> 
@@ -346,6 +255,7 @@
                 
         </main>
         <footer>
+            <hr>
             Created By: Max Cohen using raw HTML
         </footer>
     </body>

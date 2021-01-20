@@ -1,23 +1,40 @@
 *{
-    background-color: aquamarine;
+    background-color: hsl(168, 100%, 65%); 
+    
 }
 
+p{
+    color: rgb(33, 0, 110);  
+}
 
 h1{
     color: #0f03fc;
     text-align: center;
 }
 
-li{
+h2{
+    color: rgba(0,77,6,100);
+}
 
+h3{
+    color: #a20;
+}
+
+li{
+ color: hsla(234, 99%, 65%,80%);
+
+}
+
+fieldset{
+    border-radius: 25px;
 }
 
 a[href]{
 
 }
 
-input:active{
-    
+input:focus{
+    background-color: red;
 }
 
 .menu{

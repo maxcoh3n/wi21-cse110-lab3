@@ -7,14 +7,46 @@ p{
     color: rgb(33, 0, 110);  
 }
 
-.info p {
+/* combining 2 selectors element.class */
+p.info {
     font-family: 'Indie Flower', cursive;
+}
+
+/* General sibling combinator (element + element) */
+svg + aside{
+    font-style: italic; 
+}
+
+
+/* Adjacent sibling combinator (element ~ element) */
+details ~ p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    /* font-size: 100px; */
+}
+
+/* Selector List (element, element) */
+ul, ol{
+    border: 1px solid black;
+}
+
+/* Child Combinator (element > element) */
+form > h4{
+    font-style: oblique; 
 }
 
 h1{
     color: #0f03fc;
     text-align: center;
     text-decoration: underline;
+}
+
+/* Descendant Combinator (element element) */
+select option{
+    background-color: chartreuse;
+}
+
+select optgroup{
+    background-color: chartreuse;
 }
 
 h2{
@@ -34,7 +66,7 @@ fieldset{
 }
 
 a[href]{
-
+    font-weight: 600;
 }
 
 section img{
@@ -45,23 +77,20 @@ input:focus{
     background-color: red;
 }
 
-#boo{
-    /* display: none; */
-}
-
 #boo:hover{
     display: none;
 }
 
-.menu{
-
-}
 
 #movie{
-
+    font-style: italic; 
 }
 
-#food{
+.Food{
+    text-transform: capitalize;
+}
 
+#essay{
+    background-color: white;
 }
 

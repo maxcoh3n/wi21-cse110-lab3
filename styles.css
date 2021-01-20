@@ -27,7 +27,9 @@ details ~ p{
 /* Selector List (element, element) */
 ul, ol{
     border: 1px solid black;
+    max-width: 18%;
 }
+
 
 /* Child Combinator (element > element) */
 form > h4{
@@ -38,6 +40,8 @@ h1{
     color: #0f03fc;
     text-align: center;
     text-decoration: underline;
+    position: sticky;
+    top:0;
 }
 
 /* Descendant Combinator (element element) */
@@ -51,6 +55,8 @@ select optgroup{
 
 h2{
     color: rgba(0,77,6,100);
+    position: relative;
+    left: 25px;
 }
 
 h3{
@@ -63,6 +69,8 @@ li{
 
 fieldset{
     border-radius: 25px;
+    max-width: 250px;
+
 }
 
 a[href]{
@@ -92,5 +100,18 @@ input:focus{
 
 #essay{
     background-color: white;
+}
+
+
+code{
+    background-color: grey;
+}
+
+input[type=submit]{
+    min-width: 7%;
+}
+
+a:active{
+    color:rgb(255, 0, 212);
 }
 
